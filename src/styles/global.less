@@ -1,0 +1,119 @@
+@import "../../node_modules/antd/lib/style/themes/default.less";
+@import "../../node_modules/antd/dist/antd.less";
+// 引入官方提供的 less 样式入口文件
+@import "./base.less";
+@import "./init.less";
+
+#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* ---------------------------- 404 ---------------------------- */
+.nothing-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  .run-img {
+    border-radius: 20px;
+    // box-shadow: rgba(0, 0, 0, 0.08) 0px 6px 16px -8px,
+    //   rgba(0, 0, 0, 0.05) 0px 9px 28px 0px,
+    //   rgba(0, 0, 0, 0.03) 0px 12px 48px 16px;
+  }
+
+  .right-info {
+    flex: 0 0 337px;
+    width: 337px;
+    overflow: hidden;
+    margin-left: 40px;
+
+    h1 {
+      font-size: 60px;
+      color: @text-color;
+      line-height: 70px;
+      font-weight: bold;
+    }
+
+    p {
+      font-size: 18px;
+      color: @text-color-secondary;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+
+    .go-home {
+      font-size: 18px;
+      color: @primary-color;
+      line-height: 30px;
+      margin-top: 20px;
+    }
+  }
+}
+
+.no-data-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+#components-layout-demo-side .logo {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.site-layout .site-layout-background {
+  background: #fff;
+  border-radius: 6px;
+  height: 100%;
+  padding: 15px;
+}
+
+// 右边大框的样式
+.right-main-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-shadow: none;
+  background-color: #fff;
+  overflow-y: auto;
+  // border-radius: 10px;
+  padding: 30px 34px;
+
+  .ant-table-wrapper,
+  .ant-spin-nested-loading,
+  .ant-spin-container,
+  .ant-table {
+    // height: 100% !important;
+  }
+}
+
+.ant-table {
+  overflow: auto !important;
+  max-height: 100% !important;
+}
+
+.rightbox-headBox {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 130px;
+    height: 130px;
+  }
+}

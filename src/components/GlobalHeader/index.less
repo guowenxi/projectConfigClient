@@ -1,0 +1,278 @@
+@import '~antd/es/style/themes/default.less';
+
+@pro-header-hover-bg: rgba(0, 0, 0, 0.025);
+
+.menu {
+  :global(.anticon) {
+    margin-right: 8px;
+  }
+
+  :global(.ant-dropdown-menu-item) {
+    min-width: 160px;
+  }
+}
+
+.right {
+  display: flex;
+  float: right;
+  margin-left: auto;
+  overflow: hidden;
+
+  .action {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 12px;
+    cursor: pointer;
+    transition: all 0.3s;
+
+    > span {
+      color: #fff;
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: @pro-header-hover-bg;
+    }
+
+    &:global(.opened) {
+      background: @pro-header-hover-bg;
+    }
+  }
+
+  .search {
+    padding: 0 12px;
+
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .account {
+    .avatar {
+      margin: ~'calc((@{layout-header-height} - 24px) / 2)' 0;
+      margin-right: 8px;
+      color: @primary-color;
+      vertical-align: top;
+      background: rgba(255, 255, 255, 0.85);
+    }
+  }
+}
+
+.dark {
+  .action {
+    color: rgba(255, 255, 255, 0.85);
+
+    > span {
+      color: rgba(255, 255, 255, 0.85);
+    }
+
+    &:hover,
+    &:global(.opened) {
+      background: @primary-color;
+    }
+  }
+}
+
+:global(.ant-pro-global-header) {
+  .dark {
+    .action {
+      color: @text-color;
+
+      > span {
+        color: @text-color;
+      }
+
+      &:hover {
+        color: rgba(255, 255, 255, 0.85);
+
+        > span {
+          color: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: @screen-md) {
+  :global(.ant-divider-vertical) {
+    vertical-align: unset;
+  }
+
+  .name {
+    display: none;
+  }
+
+  .right {
+    position: absolute;
+    top: 0;
+    right: 12px;
+
+    .account {
+      .avatar {
+        margin-right: 0;
+      }
+    }
+
+    .search {
+      display: none;
+    }
+  }
+}
+
+.header-notice {
+  margin-right: 30px;
+  cursor: pointer;
+
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.box-title {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  margin-left: 60px;
+
+
+  span:nth-child(1) {
+    flex: 1;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+  }
+
+  span:nth-child(2) {
+    text-align: right;
+    color: rgba(0, 82, 217, 100);
+    cursor: pointer;
+  }
+}
+
+.box {
+  width: 400px;
+
+  .box-row {
+    padding: 10px;
+    width: 400px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(233, 233, 233, 100);
+
+
+    .box-row-bottom {
+      display: flex;
+      margin-top: 5px;
+
+      span {
+        flex: 1;
+        color: #5A5A5A;
+      }
+
+      span:nth-child(1) {
+        text-align: left;
+      }
+
+      span:nth-child(2) {
+        text-align: right;
+      }
+
+      span:nth-child(3) {
+        text-align: right;
+        display: none;
+        color: rgba(0, 82, 217, 100);
+      }
+    }
+  }
+
+  .box-row:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+
+    span:nth-child(2) {
+      display: none;
+    }
+
+    span:nth-child(3) {
+      display: block;
+    }
+  }
+
+  .box-bottom {
+    text-align: center;
+    cursor: pointer;
+    color: rgba(0, 82, 217, 100);
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+}
+
+
+.body {
+  .banner {
+    height: 50vh;
+    .row {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid rgba(233, 233, 233, 100);
+      cursor: pointer;
+
+      .row-left {
+        width: 90px;
+        margin-right: 20px;
+
+        div {
+          background-color: rgba(230, 247, 255, 100);
+          color: rgba(24, 144, 255, 100);
+          padding: 5px 10px;
+          text-align: center;
+          border-radius: 4px;
+        }
+      }
+
+      .row-center {
+        flex: 1;
+      }
+
+      .row-right {
+        width: 200px;
+        text-align: right;
+
+        div {
+          display: block;
+        }
+
+        span {
+          display: none;
+          cursor: pointer;
+          color: rgba(0, 82, 217, 100);
+        }
+      }
+    }
+
+    .row:hover {
+      background-color: rgba(0, 0, 0, 0.05);
+
+      .row-right {
+        div {
+          display: none;
+        }
+
+        span {
+          display: block;
+        }
+      }
+
+    }
+
+
+  }
+
+  .row-page {
+    margin-top: 20px;
+    text-align: right;
+  }
+}

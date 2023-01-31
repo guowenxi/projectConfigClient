@@ -1,0 +1,177 @@
+.text-align-justify {
+  text-align: justify;
+}
+.small-popup-btn-box {
+  margin-top: 4.44vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.small-popup-btn-box .small-pop-border-btn {
+  background-color: #ffffff;
+  border: solid 0.09vh #1572e8;
+  color: #1572e8;
+}
+.small-popup-btn-box .small-pop-bg-btn {
+  background-color: #1572e8;
+  border: solid 0.09vh #1572e8;
+  color: #fff;
+}
+.small-popup-btn-box .small-pop {
+  padding: 0 2.78vh;
+  border-radius: 0.37vh;
+  font-size: 1.48vh;
+  margin-left: 2.6vw;
+  cursor: pointer;
+  line-height: 36px;
+  margin-bottom: 0;
+}
+.small-popup-btn-box .small-pop:first-child {
+  margin-left: 0;
+}
+.right-main-box {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  position: absolute;
+  width: 97%;
+  height: 97%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  background-color: #fff;
+}
+.right-main-box .left-box {
+  width: 65%;
+}
+.right-main-box .right-box {
+  width: 30%;
+  display: flex;
+}
+.right-main-box .right-box .ant-spin-container {
+  display: flex;
+  flex: 1;
+}
+.right-main-box .top-box {
+  position: relative;
+  margin: 1.85vh 1.04vw 2.04vh;
+  display: flex;
+  justify-content: space-between;
+}
+.right-main-box .top-box .headerSearch {
+  flex: 1;
+}
+.right-main-box .top-box .dete-picker {
+  right: 0;
+  top: 0;
+  width: 10vw;
+  position: absolute;
+}
+.right-main-box .top-box .table-btn-box {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0;
+  margin: 0;
+}
+.right-main-box .top-box .table-btn-box .table-bg-bt {
+  background-color: #1572e8;
+  color: #fff;
+  border: solid 0.09vh #1572e8;
+}
+.right-main-box .top-box .table-btn-box .table-btn {
+  padding: 0 0.99vw;
+  height: 36px;
+  border-radius: 0.37vh;
+  font-size: 1.48vh;
+  cursor: pointer;
+  line-height: 36px;
+  white-space: nowrap;
+}
+.right-main-box .top-box .table-btn-box .table-border-btn {
+  color: #1572e8;
+  border: 1px solid #1572e8;
+}
+.right-main-box .bottom-box {
+  display: flex;
+  flex-flow: column;
+  padding: 0 1.04vw;
+}
+.right-main-box .bottom-box .table-full-box {
+  width: 100%;
+}
+.right-main-box .bottom-box .pagination-box {
+  padding: 1vh 0;
+}
+.right-main-box .bottom-box .pagination-box .Pagination {
+  float: right;
+}
+.content-box {
+  position: relative;
+  left: 0;
+  width: 100%;
+}
+.content-box .top-btn-box {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+.content-box .search-box {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  margin-top: 1vh;
+}
+.content-box .search-item {
+  display: flex;
+  width: 25%;
+  margin-bottom: 1vh;
+  height: 30px;
+  line-height: 30px;
+}
+.content-box .title {
+  text-align: justify;
+  display: block;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  width: 5vw;
+}
+.content-box .title:after {
+  content: "";
+  width: 100%;
+  display: inline-block;
+}
+.content-box .right-side-box {
+  flex: 1;
+  margin-right: 2vw;
+}
+.content-box .right-side-box .select-box {
+  width: 100%;
+}
+.content-box .right-side-box .range-picker {
+  width: 100% !important;
+}
+.content-box .number-interval {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.content-box .number-interval .input-number-item {
+  width: 45% !important;
+}
+.content-box .btn {
+  float: right;
+  padding: 0 1vw;
+  margin-right: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+.content-box .btn-box {
+  display: flex;
+  justify-content: center;
+}
+.content-box .btn-box:last-child {
+  margin-right: 0;
+}
+.more-search-box {
+  width: 100%;
+  position: relative;
+}
+/*# sourceMappingURL=SearchMore.css.map */

@@ -1,0 +1,209 @@
+@import '~antd/es/style/themes/default.less';
+@import './utils/utils.less';
+
+@fontSize: 14px;
+@MenufontSelectedColor: #fff;
+@menuFontColor: #77839a;
+@menuSelectedColor: #1e72f1;
+@menuBgColor: #19284d;
+@topMenuBorderColor: #1e72f1;
+@topMenuSelectedFontColor: #0f0f0f;
+@topMenuFontColor: #5a5a5a;
+
+#getfontsize(@size: 18px) {
+  font-size: @size;
+}
+
+// 这个less文件用于保存修改antd的样式表
+
+.ant-spin-container {
+  position: relative;
+}
+
+.ant-layout-content {
+  overflow: hidden;
+}
+
+.ant-spin-nested-loading,
+.ant-spin-container {
+  height: 100%;
+}
+
+.ant-tabs-nav {
+  margin: 0 !important;
+}
+
+.Qrcode {
+  display: inline-block
+}
+
+.ant-select-disabled {
+  .ant-select-selector {
+    background: #fff !important;
+    cursor: default !important;
+  }
+}
+
+.ant-picker-disabled {
+  background: #fff !important;
+
+  input[disabled] {
+    cursor: default !important;
+  }
+}
+
+.ant-input-disabled {
+  background: #fff !important;
+  cursor: default !important;
+}
+
+.ant-input-number-disabled {
+  background: #fff !important;
+  cursor: default !important;
+}
+
+.sub-button-box {
+  margin-top: 1vh;
+}
+
+.ant-select-selection-placeholder {
+  // line-height: 3 !important;
+}
+
+.ant-drawer-body {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 5px 24px 24px;
+}
+
+.ant-layout-sider {
+  background: #fff !important;
+}
+
+.ant-table {
+  border: 1px solid #f0f0f0;
+}
+
+.ant-table-tbody {
+  &>tr {
+    &:last-child {
+      &>td {
+        border: none;
+      }
+    }
+
+    &>td {
+      padding: 5px !important;
+    }
+  }
+}
+
+.ant-carousel .slick-dots li button {
+  background: #ccc !important;
+}
+
+.ant-carousel .slick-dots li.slick-active button {
+  background: @topMenuBorderColor  !important;
+}
+
+.ant-upload-list-picture-card-container {
+  width: 160px !important;
+  height: 160px !important;
+}
+
+.ant-upload.ant-upload-select-picture-card {
+  width: 160px !important;
+  height: 160px !important;
+}
+
+.ant-menu,
+.ant-menu-root,
+.ant-menu-submenu,
+.ant-menu-item {
+  background-color: #262e66 !important;
+}
+
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+
+    &-thead>tr,
+    &-tbody>tr {
+
+      >th,
+      >td {
+        white-space: pre;
+
+        >span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 兼容IE11
+@media screen and(-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+  body .ant-design-pro>.ant-layout {
+    min-height: 100vh;
+  }
+}
+
+
+/*定义滚动条高宽及背景
+ 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: rgba(0, 0, 0, 0)
+}
+
+/*定义滚动条轨道
+ 内阴影+圆角*/
+::-webkit-scrollbar-track {
+  //  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,0.3);
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0)
+}
+
+/*定义滑块
+ 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  border-radius: 6px;
+  //  -webkit-box-shadow:inset 0 0 6px rgba(0,0,0,.3);
+  background-color: rgba(0, 0, 0, 0.2)
+}

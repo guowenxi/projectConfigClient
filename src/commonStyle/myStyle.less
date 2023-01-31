@@ -1,0 +1,105 @@
+// 按键盒子
+@butWidth: 100px;
+@borderRadio: 4px;
+
+.butAllstyle {
+  width: @butWidth;
+  text-align: center;
+
+}
+
+// 按键颜色 金色全满
+.but-color-glod-all {
+  .butAllstyle();
+  background-color: #ff9b00;
+  border: 1px solid #ff9b00;
+  color: white;
+  border-radius: @borderRadio;
+}
+
+.but-color-glod-all:hover {
+  background-color: #ff9b00;
+  border: 1px solid #ff9b00;
+  color: white;
+  border-radius: @borderRadio;
+  opacity: 0.9;
+}
+
+.but-color-glod-all:focus {
+  background-color: #ff9b00;
+  border: 1px solid #ff9b00;
+  color: white;
+}
+
+// 金色 细线
+.but-color-glod-line {
+  .butAllstyle();
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ff9b00;
+  color: #ff9b00;
+  border-radius: @borderRadio;
+}
+
+.but-color-glod-line:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ff9b00;
+  color: #ff9b00;
+  border-radius: @borderRadio;
+}
+
+.but-color-glod-line:focus {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #ff9b00;
+  color: #ff9b00;
+  border-radius: @borderRadio;
+}
+
+// 浅蓝 全满
+.but-color-lightblue-all {
+  background-color: #08e9f2;
+  border: 1px solid #08e9f2;
+  width: 100px;
+}
+
+.but-color-lightblue-all:hover {
+  background-color: #08e9f2;
+  border: 1px solid #08e9f2;
+
+}
+
+// 浅蓝 线
+.but-color-lightblue-line {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #08e9f2;
+  color: #08e9f2;
+  width: 100px;
+}
+
+.but-color-lightblue-line:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #08e9f2;
+  color: #08e9f2;
+}
+
+//表格操作盒子 
+.tableOperateBox {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+  a {
+    color: #08e9f2;
+  }
+}
+
+// mystyle中的样式
+.litTitle {
+  background-color: #262e66;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 3px 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  width: 100%;
+}

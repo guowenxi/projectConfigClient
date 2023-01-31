@@ -1,0 +1,56 @@
+[
+  {
+    "name": "name",
+    "width": "100",
+    "label": {
+      "name": "模板名称",
+      "col": "3",
+      "style": {}
+    },
+    "field": {
+      "col": "7",
+      "type": "input",
+      "props": {
+        "style": {
+          "width": "100%"
+        },
+        "options": []
+      }
+    },
+    "rules": [
+      {
+        "required": "true",
+        "message": "该项为必填项"
+      }
+    ]
+  },
+  {
+    "name": "deviceTypeId",
+    "width": "100",
+    "label": {
+      "name": "所属设备类型",
+      "col": "3",
+      "style": {}
+    },
+    "field": {
+      "col": "7",
+      "type": "select",
+      "props": {
+        "url": "/services/Common/GetDeviceType",
+        "method": "POST",
+        "params": {},
+        "placeholder": "请选择设备类型",
+        "options": [],
+        "style": {
+          "width": "100%"
+        }
+      }
+    },
+    "rules": [
+      {
+        "required": "true",
+        "message": "该项为必填项"
+      }
+    ]
+  }
+]

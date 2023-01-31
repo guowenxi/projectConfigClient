@@ -1,0 +1,49 @@
+.basic-layout {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.site-layout {
+  background-color: #f0f4f6 !important;
+
+  .site-layout-background {
+    background: #fff;
+    border-radius: 6px;
+    height: 100%;
+    padding: 15px;
+  }
+}
+
+.site-layout .mainBox {
+  display: flex;
+  flex-flow: column;
+  margin: 0 !important;
+
+  // 调整
+  // padding: 20px 30px;
+  padding: 40px;
+
+  .pageTitle {
+    margin-bottom: 20px;
+
+  }
+
+  .contentBox {
+    position: relative;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.MenuIcon {
+  width: 15px;
+  height: 15px;
+}
+
+:global {}

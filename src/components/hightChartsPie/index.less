@@ -1,0 +1,77 @@
+.charts{
+
+  :global{
+    .highcharts-background{
+      display: none;
+    }
+  }
+  position: relative;
+  flex:1;
+  .chartsInner{
+      z-index:100;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .guang{
+    z-index:101;
+    position: absolute;
+    left:50%;
+    top:66%;
+    width: 85%;
+
+    transform: translate(-50%,-50%);
+  }
+  .bg{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform:scaleY(-0.5) translateY(-50%);
+    @keyframes ani {
+      100%{transform: translate(-50%,-50%) rotate(360deg)}
+    }
+
+    .bgInner{
+      position: absolute;
+      left:50%;
+      top:50%;
+      width: 100%;
+      height: 100%;
+      transform: translate(-50%,-50%);
+      animation: ani 10s linear infinite;
+    }
+  }
+}
+.legend{
+  margin-left: 1vh;
+  padding-left: 0;
+  margin-bottom: 0;
+  flex:1;
+  display: flex;
+  flex-flow: column nowrap;
+  .item{
+    display: flex;
+    align-items: center;
+    flex:1;
+    position: relative;
+  }
+  .cir{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    width:1vh;
+    height:1vh;
+  }
+  .text{
+    color:#0b85b5;
+    text-indent: 2vh;
+    width:70%;
+  }
+  .text2{
+    color:#20f4f9;
+    width:30%;
+  }
+}
